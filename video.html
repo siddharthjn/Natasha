@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Babe</title>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<script src="https://use.fontawesome.com/9263e0c41c.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<style>
+#vContainer{
+  padding-top: 5%;
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-default" style ="background-color:pink">
+<div class="container-fluid">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand"  href="#"><i class="fa fa-birthday-cake" aria-hidden="true"></i> Natasha <i class="fa fa-birthday-cake" aria-hidden="true"></i> </a>
+  </div>
+
+</div><!-- /.container-fluid -->
+</nav>
+<div class="container-fluid" id="vContainer">
+<div class="row">
+    <div class="col-xs-12 col-md-3" style="background-color:lavender;">
+      <video id="myVideo" width="320" height="568"> <source src="videos/pilot.mp4" type="video/mp4"> </video>
+    </div>
+    <div class="col-xs-12 col-md-3" style="background-color:lavenderblush;">
+      <video id ="myVideo1"> <source src="videos/color.mp4" type="video/mp4"> </video>
+    </div>
+    <div class="col-xs-12 col-md-3" style="background-color:lavender;">
+    <video id ="myVideo2" width="320" height="568"> <source src="videos/round.mp4" type="video/mp4"> </video>
+
+    </div>
+    <div class="col-xs-12 col-md-3" style="background-color:lavender;">
+    <video id ="myVideo3" width="320" height="568"> <source src="videos/drink.mp4" type="video/mp4"> </video>
+    </div>
+  </div>
+</div>
+<script>
+document.body.onload = function(){
+var vid = document.getElementById("myVideo");
+  vid.play();
+  vid.loop = true;
+
+var vid1 = document.getElementById("myVideo1");
+  vid1.play();
+  vid1.loop = true;
+
+var vid2 = document.getElementById("myVideo2");
+  vid2.play();
+  vid2.loop = true;
+
+var vid3 = document.getElementById("myVideo3");
+  vid3.play();
+  vid3.loop = true;
+};
+</script>
+</body>
+</html>
