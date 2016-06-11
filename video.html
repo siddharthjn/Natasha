@@ -52,22 +52,42 @@
 </div>
 <script>
 document.body.onload = function(){
+
+var counter =0;  
+vidFunction();
+if(counter ==0) {
+setTimeout(function(){vid1Function();}, 3000);
+setTimeout(function(){vid2Function();}, 6000);
+setTimeout(function(){vid3Function();}, 9000);
+}
+
+
+function vidFunction()
+{
 var vid = document.getElementById("myVideo");
   vid.play();
   vid.loop = true;
+}
 
+function vid1Function()
+{
 var vid1 = document.getElementById("myVideo1");
   vid1.play();
   vid1.loop = true;
-
+}
+function vid2Function()
+{
 var vid2 = document.getElementById("myVideo2");
   vid2.play();
   vid2.loop = true;
-
+}
+function vid3Function(){
 var vid3 = document.getElementById("myVideo3");
   vid3.play();
   vid3.loop = true;
+}
 };
+
 </script>
 </body>
 </html>
